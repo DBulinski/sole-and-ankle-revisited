@@ -16,3 +16,9 @@ export const WEIGHTS = {
   medium: 600,
   bold: 800,
 };
+
+export const BREAKPOINTS = {
+  phone: `@media(max-width: ${550 / 16}rem)`,
+  tablet: `@media(max-width: ${950 / 16}rem)`,
+  desktop: `@media(max-width: ${1300 / 16}rem)`
+}
