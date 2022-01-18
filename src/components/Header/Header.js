@@ -66,15 +66,19 @@ const MainHeader = styled.div`
 `;
 
 const MobileIcons = styled.div`
-  flex: 1;
-  justify-content: flex-end;
-  display: flex;
-  gap: clamp(0.5rem, 2vw, 1.5rem);
+  display: none;
+
+  ${BREAKPOINTS.tablet} {
+    flex: 1;
+    justify-content: flex-end;
+    display: flex;
+    gap: clamp(0.5rem, 2vw, 1.5rem);
+  }
 `;
 
 const Nav = styled.nav`
   display: flex;
-  gap: 48px;
+  gap: clamp(32px, 3.5vw, 48px);
   margin: 0px 48px;
 
   ${BREAKPOINTS.tablet} {
