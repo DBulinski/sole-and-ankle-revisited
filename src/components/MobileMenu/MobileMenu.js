@@ -14,7 +14,7 @@ const MobileMenu = ({ isOpen, onDismiss }) => {
 
   return (
     <DialogOverlay as="div" isOpen onDismiss={onDismiss}>
-      <StyledContent>
+      <StyledContent aria-label="Menu dialog">
         <CloseButton onClick={onDismiss}>
           <VisuallyHidden>Dismiss menu</VisuallyHidden>
           <Icon id="close" />
