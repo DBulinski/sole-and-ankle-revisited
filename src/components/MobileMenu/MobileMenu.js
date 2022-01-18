@@ -6,7 +6,6 @@ import { DialogOverlay, DialogContent } from "@reach/dialog";
 
 import Icon from "../Icon";
 import VisuallyHidden from "../VisuallyHidden";
-import { COLORS } from "../../constants";
 
 const MobileMenu = ({ isOpen, onDismiss }) => {
   if (!isOpen) {
@@ -69,19 +68,19 @@ const Footer = styled.footer`
 
 const NavLink = styled.a`
   font-size: 1.125rem;
-  color: ${COLORS.gray["900"]};
+  color: var(--gray-900);
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
 
   &:first-of-type {
-    color: ${COLORS.secondary};
+    color: var(--secondary);
   }
 `;
 
 const PolicyLinks = styled.a`
   font-size: 0.875rem;
-  color: ${COLORS.gray["700"]};
+  color: var(--grey-700);
   text-decoration: none;
   line-height: 2rem;
 `;

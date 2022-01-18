@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components/macro";
 
-import { BREAKPOINTS, COLORS, WEIGHTS } from "../../constants";
+import { BREAKPOINTS } from "../../constants";
 
 import Icon from "../Icon";
 
@@ -37,7 +37,7 @@ const Wrapper = styled.label`
 `;
 
 const VisibleLabel = styled.span`
-  color: ${COLORS.gray[700]};
+  color: var(--grey-700);
   margin-right: 16px;
 `;
 
@@ -59,10 +59,10 @@ const NativeSelect = styled.select`
 
 const DisplayedBit = styled.span`
   display: block;
-  background: ${COLORS.gray[100]};
+  background: var(--grey-100);
   font-size: 1rem;
-  font-weight: ${WEIGHTS.medium};
-  color: ${COLORS.gray[900]};
+  font-weight: var(--font-medium);
+  color: var(--grey-900);
   padding: 12px 42px 12px 16px;
   border-radius: 8px;
   pointer-events: none;
